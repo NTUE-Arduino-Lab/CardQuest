@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,13 +7,10 @@ public class LevelLoader : MonoBehaviour
     private void Start()
     {
         print(SceneManager.GetActiveScene().name);
+        StartCoroutine(LoadScene("Menu"));
     }
     private void Update()
     {
-        if(Input.GetKeyUp(KeyCode.Space))
-        {
-            StartCoroutine(LoadScene("Menu"));
-        }
         DontDestroyOnLoad(this.gameObject);
     }
     public IEnumerator LoadScene(string sceneName)
