@@ -33,9 +33,9 @@ public class MasterCtrl : MonoBehaviour
 					if (Input.GetKeyUp(KeyCode.Space))
 						getGo();
 					if (Input.GetKeyUp(KeyCode.L))
-						status = 5;
+						getLoop3();
 					if (Input.GetKeyUp(KeyCode.K))
-						status = 4;
+						getLoop2();
 				}
 				if (go)
 				{
@@ -56,7 +56,7 @@ public class MasterCtrl : MonoBehaviour
 				turnRight();
 				break;
 			case 4:
-				addLoop(2);
+				addLoop();
 				if (Input.GetKeyUp(KeyCode.W))
 					getForward();
 				if (Input.GetKeyUp(KeyCode.A))
@@ -67,15 +67,7 @@ public class MasterCtrl : MonoBehaviour
 					getEndLoop();
 				break;
 			case 5:
-				addLoop(3);
-				if (Input.GetKeyUp(KeyCode.W))
-					getForward();
-				if (Input.GetKeyUp(KeyCode.A))
-					getLeft();
-				if (Input.GetKeyUp(KeyCode.D))
-					getRight();
-				if (Input.GetKeyUp(KeyCode.Space))
-					getEndLoop();
+				
 				break;
 		}
 	}
@@ -99,7 +91,7 @@ public class MasterCtrl : MonoBehaviour
 	{
 		if (status == 0)
 			act.Add(1);
-		else if (status >= 4)
+		else if (status == 4)
 			tempList.Add(1);
 	}
 	private void turnLeft()
@@ -122,7 +114,7 @@ public class MasterCtrl : MonoBehaviour
 	{
 		if (status == 0)
 			act.Add(2);
-		else if (status >= 4)
+		else if (status == 4)
 			tempList.Add(2);
 	}
 	private void turnRight()
@@ -145,7 +137,7 @@ public class MasterCtrl : MonoBehaviour
 	{
 		if (status == 0)
 			act.Add(3);
-		else if (status >= 4)
+		else if (status == 4)
 			tempList.Add(3);
 	}
 	private bool tempLoopEnd;
@@ -153,19 +145,22 @@ public class MasterCtrl : MonoBehaviour
 	{
 		tempLoopEnd = true;
 	}
+	private int loopTimes;
 	public void getLoop2()
 	{
 		status = 4;
+		loopTimes = 2;
 	}
 	public void getLoop3()
 	{
-		status = 5;
+		status = 4;
+		loopTimes = 3;
 	}
-	private void addLoop(int loopStep)
+	private void addLoop()
 	{
 		if(tempLoopEnd == true)
 		{
-			for (int i = 0; i < loopStep; i++)
+			for (int i = 0; i < loopTimes; i++)
 			{
 				for (int j = 0; j < tempList.Count; j++)
 					act.Add(tempList[j]);
