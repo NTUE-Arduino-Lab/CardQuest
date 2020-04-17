@@ -25,18 +25,18 @@ public class MasterCtrl : MonoBehaviour
 				tempLoopEnd = false;
 				if (!go)
 				{
-					if (Input.GetKeyUp(KeyCode.W))
-						getForward();
-					if (Input.GetKeyUp(KeyCode.A))
-						getLeft();
-					if (Input.GetKeyUp(KeyCode.D))
-						getRight();
-					if (Input.GetKeyUp(KeyCode.Space))
-						getGo();
-					if (Input.GetKeyUp(KeyCode.L))
-						getLoop3();
-					if (Input.GetKeyUp(KeyCode.K))
-						getLoop2();
+					// if (Input.GetKeyUp(KeyCode.W))
+					// 	getForward();
+					// if (Input.GetKeyUp(KeyCode.A))
+					// 	getLeft();
+					// if (Input.GetKeyUp(KeyCode.D))
+					// 	getRight();
+					// if (Input.GetKeyUp(KeyCode.Space))
+					// 	getGo();
+					// if (Input.GetKeyUp(KeyCode.L))
+					// 	getLoop3();
+					// if (Input.GetKeyUp(KeyCode.K))
+					// 	getLoop2();
 				}
 				if (go)
 				{
@@ -58,14 +58,14 @@ public class MasterCtrl : MonoBehaviour
 				break;
 			case 4:
 				addLoop();
-				if (Input.GetKeyUp(KeyCode.W))
-					getForward();
-				if (Input.GetKeyUp(KeyCode.A))
-					getLeft();
-				if (Input.GetKeyUp(KeyCode.D))
-					getRight();
-				if (Input.GetKeyUp(KeyCode.Space))
-					getEndLoop();
+				// if (Input.GetKeyUp(KeyCode.W))
+				// 	getForward();
+				// if (Input.GetKeyUp(KeyCode.A))
+				// 	getLeft();
+				// if (Input.GetKeyUp(KeyCode.D))
+				// 	getRight();
+				// if (Input.GetKeyUp(KeyCode.Space))
+				// 	getEndLoop();
 				break;
 			case 5:
 				fire.SetActive(true);
