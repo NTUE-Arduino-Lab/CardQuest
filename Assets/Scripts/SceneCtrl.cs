@@ -14,8 +14,8 @@ public class SceneCtrl : MonoBehaviour
     {
         startPoint = GameObject.FindGameObjectWithTag("Start Point");
         finishPoint = GameObject.FindGameObjectWithTag("Finish Point");
-        // print("Start Point is: " + startPoint.name);
-        // print("Finish Point is: " + finishPoint.name);
+        print("Start Point is: " + startPoint.name);
+        print("Finish Point is: " + finishPoint.name);
         masterPosition = startPoint.transform.position;
         master.SetActive(true);
     }
