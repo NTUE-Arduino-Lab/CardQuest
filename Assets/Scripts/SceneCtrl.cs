@@ -8,7 +8,7 @@ public class SceneCtrl : MonoBehaviour
     private int masterStatus;
     private GameObject startPoint;
     private GameObject finishPoint;
-    public GameObject VictoryObj;
+    public GameObject victoryObj, loseObj;
     public Vector3 masterPosition;
     void Start()
     {
@@ -34,6 +34,11 @@ public class SceneCtrl : MonoBehaviour
     }
     void Win()
     {
-        VictoryObj.SetActive(true);
+        victoryObj.SetActive(true);
+    }
+    public void Lose()
+    {
+        loseObj.SetActive(true);
+        master.GetComponent<MasterCtrl>().status = 5;
     }
 }

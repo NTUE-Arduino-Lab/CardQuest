@@ -5,6 +5,7 @@ public class MasterCtrl : MonoBehaviour
 	public int status;
 	public int steps;
 	public float speed;
+	public GameObject fire;
 	private float startTime;
 	private bool getTarget;
 	private Vector3 targetPoint;
@@ -67,7 +68,7 @@ public class MasterCtrl : MonoBehaviour
 					getEndLoop();
 				break;
 			case 5:
-				
+				fire.SetActive(true);
 				break;
 		}
 	}

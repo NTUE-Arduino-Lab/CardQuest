@@ -154,6 +154,7 @@ MonoBehaviour:
   status: 0
   steps: 0
   speed: 0
+  fire: {fileID: 0}
   act: 
   tempList: 
   go: 0

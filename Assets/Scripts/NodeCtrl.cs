@@ -21,5 +21,9 @@ public class NodeCtrl : MonoBehaviour
             print(this.gameObject.name);
             sc.masterPosition = this.transform.position;
         }
+        if (Other.gameObject.name == "Master" && this.gameObject.tag == "obstacle")
+        {
+            sc.Lose();
+        }
     }
 }
