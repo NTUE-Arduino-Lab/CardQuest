@@ -8,8 +8,9 @@ public class SceneCtrl : MonoBehaviour
     private int masterStatus;
     private GameObject startPoint;
     private GameObject finishPoint;
-    public GameObject victoryObj, loseObj;
+    public GameObject victoryObj, loseObj, newAns;
     public Vector3 masterPosition;
+    private AnsCtrl ac;
     void Start()
     {
         startPoint = GameObject.FindGameObjectWithTag("Start Point");
@@ -18,23 +19,42 @@ public class SceneCtrl : MonoBehaviour
         print("Finish Point is: " + finishPoint.name);
         masterPosition = startPoint.transform.position;
         master.SetActive(true);
+        ac = GameObject.Find("AnsCtrl").GetComponent<AnsCtrl>();
     }
     void Update()
     {
         masterStatus = master.GetComponent<MasterCtrl>().status;
-        if(masterStatus == 0)
+        if(masterStatus == 0 || masterStatus == 6)
         {
             master.transform.position = masterPosition;
+            if(masterStatus == 6)
+            {
+                check();
+            }
         }
+        
+    }
+    private void check()
+    {
         if(master.transform.position.x == finishPoint.transform.position.x &&
         master.transform.position.z == finishPoint.transform.position.z)
         {
-            Win();
+            ac.check(master.GetComponent<MasterCtrl>().ans);
+            
+        }
+        else
+        {
+            Lose();
         }
     }
-    void Win()
+    public void Win()
     {
         victoryObj.SetActive(true);
+    }
+    public void NewWin()
+    {
+        victoryObj.SetActive(true);
+        newAns.SetActive(true);
     }
     public void Lose()
     {

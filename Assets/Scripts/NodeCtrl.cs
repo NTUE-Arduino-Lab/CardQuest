@@ -7,7 +7,7 @@ public class NodeCtrl : MonoBehaviour
     private SceneCtrl sc;
     void Start()
     {
-       sc = GameObject.Find("SceneCtrl").gameObject.GetComponent<SceneCtrl>();
+       sc = GameObject.Find("SceneCtrl").GetComponent<SceneCtrl>();
     }
     void Update()
     {

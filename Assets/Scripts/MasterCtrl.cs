@@ -10,9 +10,12 @@ public class MasterCtrl : MonoBehaviour
 	private bool getTarget;
 	private Vector3 targetPoint;
 	private Quaternion rotateTargetPoint;
-	public List<int> act = new List<int>();
-	public List<int> tempList = new List<int>();
+	private List<int> act = new List<int>();
+	private List<int> tempList = new List<int>();
+	public List<int> ans = new List<int>();
 	public bool go;
+	public Transform content;
+	public GameObject[] cardIcon;
 	void Start()
 	{
 
@@ -45,6 +48,8 @@ public class MasterCtrl : MonoBehaviour
 					getTarget = false;
 					if (steps < act.Count)
 						status = act[steps];
+					else
+						status = 6;
 				}
 				break;
 			case 1:
@@ -70,7 +75,16 @@ public class MasterCtrl : MonoBehaviour
 			case 5:
 				fire.SetActive(true);
 				break;
+			case 6:
+				break;
 		}
+	}
+	private void AddAns(int ansNum)
+	{
+		ans.Add(ansNum);
+		GameObject temp = Instantiate(cardIcon[ansNum], new Vector3(0, 0, 0), Quaternion.identity);
+		temp.transform.SetParent(content);
+		temp.SetActive(true);
 	}
 	private void forward()
 	{
@@ -90,6 +104,7 @@ public class MasterCtrl : MonoBehaviour
 	}
 	public void getForward()
 	{
+		AddAns(0);
 		if (status == 0)
 			act.Add(1);
 		else if (status == 4)
@@ -113,6 +128,7 @@ public class MasterCtrl : MonoBehaviour
 	}
 	public void getLeft()
 	{
+		AddAns(1);
 		if (status == 0)
 			act.Add(2);
 		else if (status == 4)
@@ -136,6 +152,7 @@ public class MasterCtrl : MonoBehaviour
 	}
 	public void getRight()
 	{
+		AddAns(2);
 		if (status == 0)
 			act.Add(3);
 		else if (status == 4)
@@ -144,22 +161,25 @@ public class MasterCtrl : MonoBehaviour
 	private bool tempLoopEnd;
 	public void getEndLoop()
 	{
+		AddAns(5);
 		tempLoopEnd = true;
 	}
 	private int loopTimes;
 	public void getLoop2()
 	{
+		AddAns(3);
 		status = 4;
 		loopTimes = 2;
 	}
 	public void getLoop3()
 	{
+		AddAns(4);
 		status = 4;
 		loopTimes = 3;
 	}
 	private void addLoop()
 	{
-		if(tempLoopEnd == true)
+		if (tempLoopEnd == true)
 		{
 			for (int i = 0; i < loopTimes; i++)
 			{

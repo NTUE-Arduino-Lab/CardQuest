@@ -11,6 +11,10 @@ public class LevelLoader : MonoBehaviour
     }
     private void Update()
     {
+        if(Input.GetKeyUp(KeyCode.P))
+        {
+            StartCoroutine(LoadScene("Level1"));
+        }
         DontDestroyOnLoad(this.gameObject);
     }
     public IEnumerator LoadScene(string sceneName)
@@ -31,5 +35,9 @@ public class LevelLoader : MonoBehaviour
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         print(scene.name);
+    }
+    public string getSceneName()
+    {
+        return SceneManager.GetActiveScene().name;
     }
 }
