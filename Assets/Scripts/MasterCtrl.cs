@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using System.Collections;
 public class MasterCtrl : MonoBehaviour
 {
 	public int status;
@@ -79,12 +80,15 @@ public class MasterCtrl : MonoBehaviour
 				break;
 		}
 	}
-	private void AddAns(int ansNum)
+	IEnumerator AddAns(int ansNum)
 	{
 		ans.Add(ansNum);
 		GameObject temp = Instantiate(cardIcon[ansNum], new Vector3(0, 0, 0), Quaternion.identity);
 		temp.transform.SetParent(content);
 		temp.SetActive(true);
+		yield return new WaitForSeconds(0.1f);
+		if(content.GetComponent<RectTransform>().sizeDelta.x >= 0)
+			content.position = new Vector3(-content.GetComponent<RectTransform>().sizeDelta.x,content.position.y,content.position.z);
 	}
 	private void forward()
 	{
@@ -104,7 +108,7 @@ public class MasterCtrl : MonoBehaviour
 	}
 	public void getForward()
 	{
-		AddAns(0);
+		StartCoroutine(AddAns(0));
 		if (status == 0)
 			act.Add(1);
 		else if (status == 4)
@@ -128,7 +132,7 @@ public class MasterCtrl : MonoBehaviour
 	}
 	public void getLeft()
 	{
-		AddAns(1);
+		StartCoroutine(AddAns(1));
 		if (status == 0)
 			act.Add(2);
 		else if (status == 4)
@@ -152,7 +156,7 @@ public class MasterCtrl : MonoBehaviour
 	}
 	public void getRight()
 	{
-		AddAns(2);
+		StartCoroutine(AddAns(2));
 		if (status == 0)
 			act.Add(3);
 		else if (status == 4)
@@ -161,19 +165,19 @@ public class MasterCtrl : MonoBehaviour
 	private bool tempLoopEnd;
 	public void getEndLoop()
 	{
-		AddAns(5);
+		StartCoroutine(AddAns(5));
 		tempLoopEnd = true;
 	}
 	private int loopTimes;
 	public void getLoop2()
 	{
-		AddAns(3);
+		StartCoroutine(AddAns(3));
 		status = 4;
 		loopTimes = 2;
 	}
 	public void getLoop3()
 	{
-		AddAns(4);
+		StartCoroutine(AddAns(4));
 		status = 4;
 		loopTimes = 3;
 	}
