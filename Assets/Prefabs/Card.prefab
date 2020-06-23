@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8484354788657897742}
   - component: {fileID: 687212511267181605}
   - component: {fileID: 6173615253120123703}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 1581631185747252971}
   - component: {fileID: 1581631185747252964}
   - component: {fileID: 3453145317312224288}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: baorder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -183,7 +183,7 @@ GameObject:
   - component: {fileID: 1581631186096014361}
   - component: {fileID: 1581631186096014362}
   - component: {fileID: 1581631186096014363}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: loop2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -220,7 +220,6 @@ MonoBehaviour:
   mTrackableName: loop2
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/logicCard.xml
-  mPreserveChildSize: 0
   mAspectRatio: 1.517493
   mImageTargetType: 0
   mWidth: 1
@@ -327,7 +326,7 @@ GameObject:
   - component: {fileID: 1581631186102884313}
   - component: {fileID: 1581631186102884314}
   - component: {fileID: 3011827657138017408}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: baorder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -418,7 +417,7 @@ GameObject:
   - component: {fileID: 1581631186191951743}
   - component: {fileID: 1581631186191951736}
   - component: {fileID: 1581631186191951737}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -520,7 +519,7 @@ GameObject:
   - component: {fileID: 1581631186406589866}
   - component: {fileID: 1581631186406589867}
   - component: {fileID: 1581631186406589860}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: go
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -557,7 +556,6 @@ MonoBehaviour:
   mTrackableName: go
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/logicCard.xml
-  mPreserveChildSize: 0
   mAspectRatio: 1.517493
   mImageTargetType: 0
   mWidth: 1
@@ -664,7 +662,7 @@ GameObject:
   - component: {fileID: 1581631186466516450}
   - component: {fileID: 1581631186466516451}
   - component: {fileID: 1581631186466516476}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -764,7 +762,7 @@ GameObject:
   - component: {fileID: 1581631186542366195}
   - component: {fileID: 1581631186542366092}
   - component: {fileID: 8954562513343693043}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: baorder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -855,7 +853,7 @@ GameObject:
   - component: {fileID: 1581631186605224873}
   - component: {fileID: 1581631186605224874}
   - component: {fileID: 1159411495585958324}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: baorder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -946,7 +944,7 @@ GameObject:
   - component: {fileID: 1581631186674716135}
   - component: {fileID: 1581631186674716128}
   - component: {fileID: 1581631186674716129}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1046,7 +1044,7 @@ GameObject:
   - component: {fileID: 1581631186733211559}
   - component: {fileID: 1581631186733211552}
   - component: {fileID: 1581631186733211553}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1146,7 +1144,7 @@ GameObject:
   - component: {fileID: 1581631186743914516}
   - component: {fileID: 1581631186743914517}
   - component: {fileID: 2814329288524610393}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: baorder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1234,7 +1232,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1581631186747270474}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Card
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1274,7 +1272,7 @@ GameObject:
   - component: {fileID: 1581631186905099270}
   - component: {fileID: 1581631186905099271}
   - component: {fileID: 8877256826362924414}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: baorder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1367,7 +1365,7 @@ GameObject:
   - component: {fileID: 1581631186937112989}
   - component: {fileID: 1581631186937112990}
   - component: {fileID: 1581631186937112991}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1404,7 +1402,6 @@ MonoBehaviour:
   mTrackableName: turnLeft
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/logicCard.xml
-  mPreserveChildSize: 0
   mAspectRatio: 1.516035
   mImageTargetType: 0
   mWidth: 1
@@ -1511,7 +1508,7 @@ GameObject:
   - component: {fileID: 1581631186994956699}
   - component: {fileID: 1581631186994956692}
   - component: {fileID: 7285205736202437035}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: baorder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1602,7 +1599,7 @@ GameObject:
   - component: {fileID: 1581631187014514781}
   - component: {fileID: 1581631187014514782}
   - component: {fileID: 1581631187014514783}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1702,7 +1699,7 @@ GameObject:
   - component: {fileID: 1581631187059065803}
   - component: {fileID: 1581631187059065796}
   - component: {fileID: 1581631187059065797}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1804,7 +1801,7 @@ GameObject:
   - component: {fileID: 1581631187207305996}
   - component: {fileID: 1581631187207305997}
   - component: {fileID: 1581631187207305998}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: loopEnd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1841,7 +1838,6 @@ MonoBehaviour:
   mTrackableName: loopEnd
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/logicCard.xml
-  mPreserveChildSize: 0
   mAspectRatio: 1.517493
   mImageTargetType: 0
   mWidth: 1
@@ -1948,7 +1944,7 @@ GameObject:
   - component: {fileID: 1581631187577591760}
   - component: {fileID: 1581631187577591761}
   - component: {fileID: 1581631187577591762}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2050,7 +2046,7 @@ GameObject:
   - component: {fileID: 1581631187654808879}
   - component: {fileID: 1581631187654808872}
   - component: {fileID: 1581631187654808873}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2087,7 +2083,6 @@ MonoBehaviour:
   mTrackableName: turnRight
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/logicCard.xml
-  mPreserveChildSize: 0
   mAspectRatio: 1.516035
   mImageTargetType: 0
   mWidth: 1
@@ -2196,7 +2191,7 @@ GameObject:
   - component: {fileID: 1581631187786465835}
   - component: {fileID: 1581631187786465828}
   - component: {fileID: 1581631187786465829}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: forward
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2233,7 +2228,6 @@ MonoBehaviour:
   mTrackableName: forward
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/logicCard.xml
-  mPreserveChildSize: 0
   mAspectRatio: 1.516035
   mImageTargetType: 0
   mWidth: 1
@@ -2342,7 +2336,7 @@ GameObject:
   - component: {fileID: 1581631187844713896}
   - component: {fileID: 1581631187844713897}
   - component: {fileID: 1581631187844713898}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: loop3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2379,7 +2373,6 @@ MonoBehaviour:
   mTrackableName: loop3
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/logicCard.xml
-  mPreserveChildSize: 0
   mAspectRatio: 1.517493
   mImageTargetType: 0
   mWidth: 1
@@ -2486,7 +2479,7 @@ GameObject:
   - component: {fileID: 5965357630066430170}
   - component: {fileID: 2741113942952101554}
   - component: {fileID: 3601972326296080410}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2604,7 +2597,7 @@ GameObject:
   - component: {fileID: 6376902585322405227}
   - component: {fileID: 4455407920390921894}
   - component: {fileID: 8825196097569152278}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2683,7 +2676,7 @@ GameObject:
   - component: {fileID: 568336080222414161}
   - component: {fileID: 1214797437733399153}
   - component: {fileID: 5210537260298363709}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2802,7 +2795,7 @@ GameObject:
   - component: {fileID: 5166657327219966945}
   - component: {fileID: 6403858807123390036}
   - component: {fileID: 3749850286536895260}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2921,7 +2914,7 @@ GameObject:
   - component: {fileID: 8315223762805973805}
   - component: {fileID: 7625889356170387617}
   - component: {fileID: 7319024702046471972}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3039,7 +3032,7 @@ GameObject:
   - component: {fileID: 1281774549558783882}
   - component: {fileID: 4075091731444799757}
   - component: {fileID: 1750068843670452459}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3117,7 +3110,7 @@ GameObject:
   - component: {fileID: 1012226103644958768}
   - component: {fileID: 1872383371774607989}
   - component: {fileID: 8261978396261809350}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3196,7 +3189,7 @@ GameObject:
   - component: {fileID: 890965204828636303}
   - component: {fileID: 5649849056819995694}
   - component: {fileID: 1454167963082309432}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3315,7 +3308,7 @@ GameObject:
   - component: {fileID: 7644790744933500836}
   - component: {fileID: 6085731533404636277}
   - component: {fileID: 5925820871962577643}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3433,7 +3426,7 @@ GameObject:
   - component: {fileID: 8063541051085434598}
   - component: {fileID: 3620075251454052625}
   - component: {fileID: 844408114658026042}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3511,7 +3504,7 @@ GameObject:
   - component: {fileID: 5984763297177890086}
   - component: {fileID: 311209472939892966}
   - component: {fileID: 5136831433302051178}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3589,7 +3582,7 @@ GameObject:
   - component: {fileID: 4595440717011067219}
   - component: {fileID: 867606170561347746}
   - component: {fileID: 3184939740684665917}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3668,7 +3661,7 @@ GameObject:
   - component: {fileID: 7027532607539150133}
   - component: {fileID: 3522007516554891859}
   - component: {fileID: 6894667158636410965}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
