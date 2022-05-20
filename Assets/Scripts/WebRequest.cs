@@ -54,7 +54,7 @@ public class WebRequest : MonoBehaviour
         str = str + "]";
         //print(str);
         form.AddField("map", str);
-        UnityWebRequest www = UnityWebRequest.Post("https://script.google.com/a/grad.ntue.edu.tw/macros/s/AKfycbx60_AnB6P9pPqvv3ltoBzZRCSXpbOP9RhCeJ9twR_hWpoMkd4DVOa47UBqR7HVErcOPg/exec", form);
+        UnityWebRequest www = UnityWebRequest.Post("https://script.google.com/a/grad.ntue.edu.tw/macros/s/AKfycbwzuKnjhxDNGBDjr4e2br9Aqgfeg99HnmkH7xlV9P5e3cr_dflv0CQ9JuhtJakNWSfiVg/exec", form);
         www.SendWebRequest();
         while (!www.isDone)
         {
@@ -86,7 +86,7 @@ public class WebRequest : MonoBehaviour
         form.AddField("method", "read"); //read取得特定資料
         form.AddField("id", id);
         form.AddField("name", "李淯萱");
-        UnityWebRequest www = UnityWebRequest.Post("https://script.google.com/a/grad.ntue.edu.tw/macros/s/AKfycbx60_AnB6P9pPqvv3ltoBzZRCSXpbOP9RhCeJ9twR_hWpoMkd4DVOa47UBqR7HVErcOPg/exec", form);
+        UnityWebRequest www = UnityWebRequest.Post("https://script.google.com/a/grad.ntue.edu.tw/macros/s/AKfycbwzuKnjhxDNGBDjr4e2br9Aqgfeg99HnmkH7xlV9P5e3cr_dflv0CQ9JuhtJakNWSfiVg/exec", form);
         www.SendWebRequest();
         while (!www.isDone)
         {
@@ -140,7 +140,7 @@ public class WebRequest : MonoBehaviour
         str = str + "]";
         //print(str);
         form.AddField("map", str);
-        UnityWebRequest www = UnityWebRequest.Post("https://script.google.com/a/grad.ntue.edu.tw/macros/s/AKfycbx60_AnB6P9pPqvv3ltoBzZRCSXpbOP9RhCeJ9twR_hWpoMkd4DVOa47UBqR7HVErcOPg/exec", form);
+        UnityWebRequest www = UnityWebRequest.Post("https://script.google.com/a/grad.ntue.edu.tw/macros/s/AKfycbwzuKnjhxDNGBDjr4e2br9Aqgfeg99HnmkH7xlV9P5e3cr_dflv0CQ9JuhtJakNWSfiVg/exec", form);
         www.SendWebRequest();
         while (!www.isDone)
         {
@@ -169,7 +169,7 @@ public class WebRequest : MonoBehaviour
         form.AddField("method", "delete"); //read取得特定資料
         form.AddField("id", id);
         //form.AddField("name", name);
-        UnityWebRequest www = UnityWebRequest.Post("https://script.google.com/a/grad.ntue.edu.tw/macros/s/AKfycbx60_AnB6P9pPqvv3ltoBzZRCSXpbOP9RhCeJ9twR_hWpoMkd4DVOa47UBqR7HVErcOPg/exec", form);
+        UnityWebRequest www = UnityWebRequest.Post("https://script.google.com/a/grad.ntue.edu.tw/macros/s/AKfycbwzuKnjhxDNGBDjr4e2br9Aqgfeg99HnmkH7xlV9P5e3cr_dflv0CQ9JuhtJakNWSfiVg/exec", form);
         www.SendWebRequest();
         while (!www.isDone)
         {

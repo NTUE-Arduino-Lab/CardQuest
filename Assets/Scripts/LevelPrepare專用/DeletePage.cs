@@ -21,7 +21,7 @@ public class DeletePage : MonoBehaviour
         form.AddField("method", "delete"); //read取得特定資料
         form.AddField("id", id);
 
-        UnityWebRequest www = UnityWebRequest.Post("https://script.google.com/a/grad.ntue.edu.tw/macros/s/AKfycbx60_AnB6P9pPqvv3ltoBzZRCSXpbOP9RhCeJ9twR_hWpoMkd4DVOa47UBqR7HVErcOPg/exec", form);
+        UnityWebRequest www = UnityWebRequest.Post("https://script.google.com/a/grad.ntue.edu.tw/macros/s/AKfycbwzuKnjhxDNGBDjr4e2br9Aqgfeg99HnmkH7xlV9P5e3cr_dflv0CQ9JuhtJakNWSfiVg/exec", form);
         www.SendWebRequest();
         while (!www.isDone)
         {

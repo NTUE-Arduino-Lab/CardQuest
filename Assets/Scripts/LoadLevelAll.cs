@@ -41,7 +41,7 @@ public class LoadLevelAll : MonoBehaviour
 
         //傳輸的資料
         form.AddField("method", "read_all"); //read_all取得所有資料
-        UnityWebRequest www = UnityWebRequest.Post("https://script.google.com/a/grad.ntue.edu.tw/macros/s/AKfycbx60_AnB6P9pPqvv3ltoBzZRCSXpbOP9RhCeJ9twR_hWpoMkd4DVOa47UBqR7HVErcOPg/exec", form);
+        UnityWebRequest www = UnityWebRequest.Post("https://script.google.com/a/grad.ntue.edu.tw/macros/s/AKfycbwzuKnjhxDNGBDjr4e2br9Aqgfeg99HnmkH7xlV9P5e3cr_dflv0CQ9JuhtJakNWSfiVg/exec", form);
         www.SendWebRequest();
 
         while (!www.isDone)
